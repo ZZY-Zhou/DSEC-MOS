@@ -1,17 +1,24 @@
-# DSEC-MOS: Segment Any Moving Object with Moving Ego Vehicle
+# Event-Free Moving Object Segmentation from Moving Ego Vehicle
 
-This repository is for the paper **DSEC-MOS: Segment Any Moving Object with Moving Ego Vehicle**, by
+This repository is for the paper **Event-Free Moving Object Segmentation from Moving Ego Vehicle**, by
 [Zhuyun Zhou](https://scholar.google.com/citations?user=sXolUXMAAAAJ&hl=en&oi=ao),
 [Zongwei Wu](https://scholar.google.com/citations?user=3QSALjX498QC&hl=en&oi=ao),
+[Danda Pani Paudel](https://scholar.google.com/citations?user=W43pvPkAAAAJ&hl=en&oi=ao),
 [Rémi Boutteau](https://scholar.google.com/citations?user=U-SrcPkAAAAJ&hl=en&oi=ao),
 [Fan Yang](https://scholar.google.com/citations?user=GNQHje8AAAAJ&hl=en&oi=ao),
+[Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en&oi=ao),
+[Radu Timofte](https://scholar.google.com/citations?user=u3MwH5kAAAAJ&hl=en&oi=ao),
 [Dominique Ginhac](https://scholar.google.com/citations?user=fkdCT5kAAAAJ&hl=en&oi=ao).
 
 PDF version of the paper is available [here](https://arxiv.org/abs/2305.00126).
 
 ## Abstract
 
-Moving Object Segmentation (MOS), a crucial task in computer vision, has numerous applications such as surveillance, autonomous driving, and video analytics. Existing datasets for moving object segmentation mainly focus on RGB or Lidar videos, but lack additional event information that can enhance the understanding of dynamic scenes. To address this limitation, we propose a novel dataset, called DSEC-MOS. Our dataset includes frames captured by RGB cameras embedded on moving vehicules and incorporates event data, which provide high temporal resolution and low-latency information about changes in the scenes. To generate accurate segmentation mask annotations for moving objects, we apply the recently emerged large model SAM - Segment Anything Model - with moving object bounding boxes from DSEC-MOD serving as prompts and calibrated RGB frames, then further revise the results. Our DSEC-MOS dataset contains in total 16 sequences (13314 images). To the best of our knowledge, DSEC-MOS is also the first moving object segmentation dataset that includes event camera in autonomous driving.
+Moving object segmentation (MOS) in dynamic scenes is challenging for autonomous driving, especially for sequences obtained from moving ego vehicles. 
+Most state-of-the-art methods leverage motion cues obtained from optical flow maps. 
+However, since these methods are often based on optical flows that are pre-computed from successive RGB frames, this neglects the temporal consideration of events occurring within inter-frame and limits the practicality of these methods in real-life situations.
+To address these limitations, we propose to exploit event cameras for better video understanding, which provide rich motion cues without relying on optical flow. To foster research in this area, we first introduce a novel large-scale dataset called DSEC-MOS for moving object segmentation from moving ego vehicles. Subsequently, we devise EmoFormer, a novel network able to exploit the event data. For this purpose, we fuse the event prior with spatial semantic maps to distinguish moving objects from the static background, adding another level of dense supervision around our object of interest - moving ones. Our proposed network relies only on event data for training but does not require event input during inference, making it directly comparable to frame-only methods in terms of efficiency and more widely usable in many application cases.
+An exhaustive comparison with 8 state-of-the-art video object segmentation methods highlights a significant performance improvement of our method over all other methods.
 
 ## Citation
 
