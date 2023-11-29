@@ -23,9 +23,9 @@ An exhaustive comparison with 8 state-of-the-art video object segmentation metho
 ## Citation
 
 ```BibTeX
-@article{zhou2023dsec,
-  title={DSEC-MOS: Segment Any Moving Object with Moving Ego Vehicle},
-  author={Zhou, Zhuyun and Wu, Zongwei and Boutteau, R{\'e}mi and Yang, Fan and Ginhac, Dominique},
+@article{zhou2023event,
+  title={Event-Free Moving Object Segmentation from Moving Ego Vehicle},
+  author={Zhou, Zhuyun and Wu, Zongwei and Pani Paudel, Danda and Boutteau, R{\'e}mi and Yang, Fan and Van Gool, Luc and Timofte, Radu and Ginhac, Dominique},
   journal={arXiv preprint arXiv:2305.00126},
   year={2023}
 }
