@@ -1,4 +1,4 @@
-# Event-Free Moving Object Segmentation from Moving Ego Vehicle
+# Event-Free Moving Object Segmentation from Moving Ego Vehicle (IROS'24 Oral)
 
 This repository is for the paper **Event-Free Moving Object Segmentation from Moving Ego Vehicle**, by
 [Zhuyun Zhou](https://scholar.google.com/citations?user=sXolUXMAAAAJ&hl=en&oi=ao),
