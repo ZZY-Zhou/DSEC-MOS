@@ -52,7 +52,7 @@ The exhaustive comparison highlights a significant performance improvement of ou
 
 ## Dataset
 
-***DSEC-MOS*** **: ***DSEC*** - ***M***oving ***O***bject ***S***egmentation** can be downloaded here: [Training]() and [Testing]().
+***DSEC-MOS*** **: ***DSEC*** - ***M***oving ***O***bject ***S***egmentation** can be downloaded [here](https://drive.google.com/file/d/1u1ULy3xewb5whgcyLK41UFVrOtWSq_PW/view?usp=drive_link).
 
 In total, our DSEC-MOS dataset contains 16 sequences (13314 frames), with 11 sequences (10495 frames) for training and 5 other sequences (2819 frames) for testing.
 
@@ -99,7 +99,10 @@ Details can be found in the paper [ RGB-Event Fusion for Moving Object Detection
 
 ## Pre-trained Weights
 
-Our pre-trained weights for our RENet can be downloaded [here]().
+Our pre-trained weights for our EmoFormer can be downloaded [here]().
+
+
+The initial pre-trained weights are also available: [swin](https://drive.google.com/file/d/1kbBPHFF3kR57dqLKkCHWv3Nrm-hDeuBC/view?usp=sharing) backbone.
 
 
 ## Installation
